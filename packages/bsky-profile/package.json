@@ -1,0 +1,57 @@
+{
+  "name": "bsky-profile",
+  "version": "0.0.0",
+  "description": "Profile web component for bluesky application",
+  "type": "module",
+  "license": "MIT",
+  "author": "Paras Solanki <parassolanki151@gmail.com> (https://github.com/ParasSolanki)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ParasSolanki/bsky-profile.git",
+    "directory": "packages/bsky-profile"
+  },
+  "bugs": {
+    "url": "https://github.com/ParasSolanki/bsky-profile/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "keywords": [
+    "web component",
+    "bluesky",
+    "components"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/bsky-profile.d.ts",
+      "import": "./dist/bsky-profile.js",
+      "require": "./dist/bsky-profile.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/bsky-profile.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "serve": "wet serve",
+    "build": "tsup",
+    "release": "changeset version",
+    "pub:release": "pnpm build && npm publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.9",
+    "tsup": "^8.3.5",
+    "wet-run": "^1.2.2"
+  }
+}

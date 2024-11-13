@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "description": "Profile web component for bluesky application",
+  "author": "Paras Solanki <parassolanki151@gmail.com> (https://github.com/ParasSolanki)",
+  "license": "MIT",
+  "packageManager": "pnpm@9.12.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ParasSolanki/bsky-profile.git"
+  },
+  "keywords": [
+    "web component",
+    "bluesky",
+    "components"
+  ],
+  "scripts": {
+    "release": "changeset version",
+    "pub:release": "cd packages/bsky-profile && pnpm pub:release"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.9"
+  }
+}

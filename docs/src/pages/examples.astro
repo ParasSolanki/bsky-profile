@@ -1,0 +1,196 @@
+---
+import Layout from "../layouts/default.astro";
+---
+
+<Layout
+  title="Examples | Bsky Profile Webcomponent"
+  description="Examples of Bsky Profile Webcomponent"
+>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+
+      box-sizing: border-box;
+    }
+
+    .bordered {
+      border: 1px solid #000;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+  <div
+    style="
+        max-width: 120rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      "
+  >
+    <div>
+      <h1>Profile with avatar and banner</h1>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <div class="bordered">
+          <h3>Default with Banner & Description</h3>
+          <bsky-profile data-handle="evanyou.me"></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>With Description</h3>
+          <bsky-profile data-handle="evanyou.me" data-show-description="true"
+          ></bsky-profile>
+        </div>
+
+        <div class="bordered">
+          <h3>With Banner</h3>
+          <bsky-profile data-handle="evanyou.me" data-show-banner="true"
+          ></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>Without Banner & Description</h3>
+          <bsky-profile
+            data-handle="evanyou.me"
+            data-show-banner="false"
+            data-show-description="false"></bsky-profile>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <div class="bordered">
+          <h3>
+            Default Banner & Description with Dark <br />
+            theme
+          </h3>
+          <bsky-profile data-handle="evanyou.me" data-theme="dark"
+          ></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>Description with dark theme</h3>
+          <bsky-profile
+            data-handle="evanyou.me"
+            data-show-description="true"
+            data-theme="dark"></bsky-profile>
+        </div>
+
+        <div class="bordered">
+          <h3>Banner with dark theme</h3>
+          <bsky-profile
+            data-handle="evanyou.me"
+            data-show-banner="true"
+            data-theme="dark"></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>Banner & Description with dark theme</h3>
+          <bsky-profile
+            data-handle="evanyou.me"
+            data-show-banner="false"
+            data-show-description="false"
+            data-theme="dark"></bsky-profile>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1>Profile with avatar, banner and auto theme mode</h1>
+
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <div class="bordered">
+          <h3>
+            Default Banner & Description with auto <br />
+            theme
+          </h3>
+          <bsky-profile data-handle="danabra.mov" data-theme="auto"
+          ></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>Description with auto theme</h3>
+          <bsky-profile
+            data-handle="danabra.mov"
+            data-show-description="true"
+            data-theme="auto"></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>Banner with auto theme</h3>
+          <bsky-profile
+            data-handle="danabra.mov"
+            data-show-banner="true"
+            data-theme="auto"></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>Banner & Description with auto theme</h3>
+          <bsky-profile
+            data-handle="danabra.mov"
+            data-show-banner="false"
+            data-show-description="false"
+            data-theme="auto"></bsky-profile>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1>Profile without avatar and banner</h1>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <div class="bordered">
+          <h3>Default with Banner & Description</h3>
+          <bsky-profile data-handle="parassolanki.bsky.social"></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>With Description</h3>
+          <bsky-profile
+            data-handle="parassolanki.bsky.social"
+            data-show-description="true"></bsky-profile>
+        </div>
+
+        <div class="bordered">
+          <h3>With Banner</h3>
+          <bsky-profile
+            data-handle="parassolanki.bsky.social"
+            data-show-banner="true"></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>Without Banner & Description</h3>
+          <bsky-profile
+            data-handle="parassolanki.bsky.social"
+            data-show-banner="false"
+            data-show-description="false"></bsky-profile>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <div class="bordered">
+          <h3>
+            Default Banner & Description with Dark <br />
+            theme
+          </h3>
+          <bsky-profile data-handle="parassolanki.bsky.social" data-theme="dark"
+          ></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>Description with dark theme</h3>
+          <bsky-profile
+            data-handle="parassolanki.bsky.social"
+            data-show-description="true"
+            data-theme="dark"></bsky-profile>
+        </div>
+
+        <div class="bordered">
+          <h3>Banner with dark theme</h3>
+          <bsky-profile
+            data-handle="parassolanki.bsky.social"
+            data-show-banner="true"
+            data-theme="dark"></bsky-profile>
+        </div>
+        <div class="bordered">
+          <h3>Banner & Description with dark theme</h3>
+          <bsky-profile
+            data-handle="parassolanki.bsky.social"
+            data-show-banner="false"
+            data-show-description="false"
+            data-theme="dark"></bsky-profile>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
