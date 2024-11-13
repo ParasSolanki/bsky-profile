@@ -1,13 +1,13 @@
 {
   "name": "bsky-profile",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Profile web component for bluesky application",
   "type": "module",
   "license": "MIT",
   "author": "Paras Solanki <parassolanki151@gmail.com> (https://github.com/ParasSolanki)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ParasSolanki/bsky-profile.git",
+    "url": "git+https://github.com/ParasSolanki/bsky-profile.git",
     "directory": "packages/bsky-profile"
   },
   "bugs": {

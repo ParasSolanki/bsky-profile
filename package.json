@@ -18,7 +18,7 @@
     "release": "changeset version",
     "pub:release": "cd packages/bsky-profile && pnpm pub:release"
   },
-  "devDependencies": {
+  "dependencies": {
     "@changesets/cli": "^2.27.9"
   }
 }
