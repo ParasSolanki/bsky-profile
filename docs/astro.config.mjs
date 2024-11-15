@@ -29,6 +29,10 @@ export default defineConfig({
           items: [
             { label: "Astro", slug: "usage/astro" },
             { label: "React", slug: "usage/react" },
+            { label: "Vue", slug: "usage/vue" },
+            { label: "Svelte", slug: "usage/svelte" },
+            { label: "Solid", slug: "usage/solid" },
+            { label: "Lit", slug: "usage/lit" },
           ],
         },
       ],
