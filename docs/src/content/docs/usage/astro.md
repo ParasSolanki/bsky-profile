@@ -28,7 +28,9 @@ Now, you can use the component in your Astro page.
 
 ## Usage as Package
 
-Install `bsky-profile` module and inside your page file add below `<script>` tag
+Follow the [Installation](/getting-started#installation) guide and install the package.
+
+After installing inside your page file add below `<script>` tag
 
 ```astro
 // src/pages/index.astro

@@ -8,8 +8,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier '**/*.{cjs,mjs,ts,tsx,md,json,astro}' --ignore-path ./.gitignore --ignore-unknown --write",
-    "format:check": "prettier '**/*.{cjs,mjs,ts,tsx,md,json,astro}' --ignore-path ./.gitignore --ignore-unknown --check",
+    "format": "prettier '**/*.{cjs,mjs,ts,tsx,md,mdx,json,astro}' --ignore-path ./.gitignore --ignore-unknown --write",
+    "format:check": "prettier '**/*.{cjs,mjs,ts,tsx,md,mdx,json,astro}' --ignore-path ./.gitignore --ignore-unknown --check",
     "lint": "eslint . --report-unused-disable-directives",
     "lint:fix": "pnpm lint --fix"
   },

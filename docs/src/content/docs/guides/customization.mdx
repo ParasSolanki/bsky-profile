@@ -5,7 +5,7 @@ description: Customization options for Bsky Profile component
 
 The component uses the following CSS variables to allow for easy customization:
 
-import '../../../components/bsky-profile.astro';
+import "../../../components/bsky-profile.astro";
 
 ```css
 :host {
@@ -19,8 +19,8 @@ import '../../../components/bsky-profile.astro';
   --bsky-profile-width: 20rem;
   --bsky-profile-background-color: #ffffff;
   --bsky-profile-border-radius: 0.75rem;
-  --bsky-profile-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0
-          0 0 / 0.1);
+  --bsky-profile-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
   --bsky-banner-width: 20rem;
   --bsky-banner-height: 6.5rem;
   --bsky-banner-background-color: #f0f3f5;
@@ -86,6 +86,8 @@ bsky-profile[data-theme="dark"] {
 You can also customize the component by using the `style` attribute. Which will only apply modify styles to that instance of the component.
 
 ```html
-<bsky-profile data-handle="danabra.mov" style="--bsky-font-family: 'Soege UI', sans-serif; --bsky-profile-width: 25rem; --bsky-banner-width: 25rem; --bsky-profile-background-color: #000000; --bsky-profile-border-radius: 1rem;"></bsky-profile>
+<bsky-profile
+  data-handle="danabra.mov"
+  style="--bsky-font-family: 'Soege UI', sans-serif; --bsky-profile-width: 25rem; --bsky-banner-width: 25rem; --bsky-profile-background-color: #000000; --bsky-profile-border-radius: 1rem;"
+></bsky-profile>
 ```
-
