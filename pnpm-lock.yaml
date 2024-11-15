@@ -24,8 +24,8 @@ importers:
         specifier: ^4.16.12
         version: 4.16.12(rollup@4.25.0)(typescript@5.6.3)
       bsky-profile:
-        specifier: workspace:^
-        version: link:../packages/bsky-profile
+        specifier: ^0.0.1
+        version: 0.0.1
       sharp:
         specifier: ^0.32.5
         version: 0.32.6
@@ -1218,6 +1218,9 @@ packages:
     resolution: {integrity: sha512-ZIc+Q62revdMcqC6aChtW4jz3My3klmCO1fEmINZY/8J3EpBg5/A/D0AKmBveUh6pgoeycoMkVMko84tuYS+Gg==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
+
+  bsky-profile@0.0.1:
+    resolution: {integrity: sha512-aKPZL4fWrzuDNBq6JSJho06obwqdwoB9vFnKZkJ8JAGV35xNm3CGbN6/+PhYX3Hg00qEP6lDz1dMT1P/UQZAfg==}
 
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
@@ -4631,6 +4634,8 @@ snapshots:
       electron-to-chromium: 1.5.57
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
+
+  bsky-profile@0.0.1: {}
 
   buffer@5.7.1:
     dependencies:

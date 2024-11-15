@@ -18,7 +18,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/starlight": "^0.29.0",
     "astro": "^4.16.12",
-    "bsky-profile": "workspace:^",
+    "bsky-profile": "^0.0.1",
     "sharp": "^0.32.5"
   },
   "devDependencies": {
