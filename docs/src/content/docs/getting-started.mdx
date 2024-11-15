@@ -1,0 +1,104 @@
+---
+title: Getting Started
+description: Getting Started with Bsky Profile component
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import '../../components/bsky-profile.astro';
+
+Unofficial BSKY ([Bluesky](https://bsky.app)) Profile Webcomponent
+
+Bsky Profile Webcomponent. `<bsky-profile>` is a custom web component that displays a user's Bluesky profile. It fetches the profile data from the Bluesky API and renders it in a clean, responsive layout and with dark, light and auto theme support.
+
+Additionally, the component respects the user's device settings and avoids animations if the user has enabled "Reduce Motion" in their browser preferences.
+
+
+## Preview
+
+<div style="margin-top: 1rem;">
+    <bsky-profile data-handle="danabra.mov" data-theme="dark"></bsky-profile>
+</div>
+
+## Usage with CDN
+
+The easiest way to get started is to use the CDN. 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- Default with description and banner -->
+        <bsky-profile data-handle="danabra.mov"></bsky-profile>
+
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-profile@0.0.1/dist/bsky-profile.js"></script>
+    </body>
+</html>
+```
+
+## Installation
+
+Install the `bsky-profile` package using your package manager of choice.
+
+<Tabs syncKey="pkg">
+<TabItem label="npm">
+
+```sh
+npm install bsky-profile
+```
+
+</TabItem>
+<TabItem label="pnpm">
+
+```sh
+pnpm install bsky-profile
+```
+
+</TabItem>
+<TabItem label="Yarn">
+
+```sh
+yarn install bsky-profile
+```
+
+</TabItem>
+</Tabs>
+
+## Usage
+
+`<bsky-profile>` component can be used in your project by simply adding the following code to your HTML file.
+
+```html
+// index.html
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- Default with description and banner -->
+        <bsky-profile data-handle="danabra.mov"></bsky-profile>
+
+        <!-- Default with no description -->
+        <bsky-profile
+            data-handle="danabra.mov"
+            data-show-description="false"
+        ></bsky-profile>
+
+        <!-- Default with no banner -->
+        <bsky-profile data-handle="danabra.mov" data-show-banner="false"></bsky-profile>
+
+        <!-- Default with no banner and description -->
+        <bsky-profile
+            data-handle="danabra.mov"
+            data-show-description="false"
+            data-show-banner="false"
+        ></bsky-profile>
+
+        <!-- Default with description, banner and theme dark -->
+        <bsky-profile data-handle="danabra.mov" data-theme="dark"></bsky-profile>
+
+        <!-- Default with description, banner and theme auto -->
+        <bsky-profile data-handle="danabra.mov" data-theme="auto"></bsky-profile>
+    </body>
+</html>
+```
+
+For more information about the available options, please refer to the [Attributes](/docs/guides/attributes) guide.

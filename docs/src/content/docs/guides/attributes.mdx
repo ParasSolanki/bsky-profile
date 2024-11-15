@@ -1,0 +1,57 @@
+---
+title: Attributes
+description: Attributes of Bsky Profile component
+
+---
+The component supports the following attributes:
+
+| Attribute               | Description                                                                                                                                                                       |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `data-handle`           | The Bluesky handle of the user whose profile you want to display.                                                                                                                 |
+| `data-show-description` | (Optional) Set to "false" to hide the user's profile description.                                                                                                                 |
+| `data-show-banner`      | (Optional) Set to "false" to hide the user's profile banner.                                                                                                                      |
+| `data-theme`            | (Optional) Set to "light", "dark", or "auto" to control the theme of the component. The "auto" setting will automatically adjust the theme based on the user's system preference. |
+
+
+## Examples
+
+Here are some examples of how to use the component with different attributes.
+
+```html
+// index.html
+
+<!-- Default -->
+<bsky-profile data-handle="danabra.mov"></bsky-profile>
+
+<!-- Default with no description -->
+<bsky-profile data-handle="danabra.mov" data-show-description="false"></bsky-profile>
+
+<!-- Default with no banner -->
+<bsky-profile data-handle="danabra.mov" data-show-banner="false"></bsky-profile>
+
+<!-- Default with no banner and description -->
+<bsky-profile data-handle="danabra.mov" data-show-banner="false" data-show-description="false"></bsky-profile>
+
+<!-- Default with description, banner and theme dark -->
+<bsky-profile data-handle="danabra.mov" data-theme="dark"></bsky-profile>
+
+<!-- Default with description, banner and theme auto -->
+<bsky-profile data-handle="danabra.mov" data-theme="auto"></bsky-profile>
+```
+
+You can programmatically change the attributes of the component by using the `setAttribute` method.
+
+```js
+// script.js
+
+const profile = document.querySelector("bsky-profile");
+profile.setAttribute("data-show-description", "false");
+```
+
+For example you might want to change theme depending upon your current theme.
+
+```js
+// script.js
+
+```
+
