@@ -1,0 +1,18 @@
+---
+title: Extending Types
+description: Extending Types of Bsky Profile component when using inside typescript project
+---
+
+When you are inside typescript project you probably dont want typescript error when using the component.
+
+So, you can extend the types of the component by modifing your tsconfig.json file.
+
+```json
+{
+  "compilerOptions": {
+    "types": ["bsky-profile"]
+  }
+}
+```
+
+For it to work you have to install `bsky-profile` as dependency in your package.json.
