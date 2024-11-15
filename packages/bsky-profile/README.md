@@ -6,6 +6,12 @@ Bsky Profile Webcomponent. `<bsky-profile>` is a custom web component that displ
 
 Additionally, the component respects the user's device settings and avoids animations if the user has enabled "Reduce Motion" in their browser preferences.
 
+## 📚 Documentation
+
+Want to get started using some embed components?
+
+Check out the [`bsky-profile` documentation](https://parassolanki.github.io/bsky-profile/)
+
 ### Usage
 
 ```html
@@ -37,7 +43,7 @@ Additionally, the component respects the user's device settings and avoids anima
 
 ### Preview
 
-[Preview](./preview.png)
+[Preview](https://github.com/ParasSolanki/bsky-profile/blob/main/packages/bsky-profile/preview.png)
 
 ### Attributes
 
@@ -66,8 +72,8 @@ The component uses the following CSS variables to allow for easy customization:
   --bsky-profile-width: 20rem;
   --bsky-profile-background-color: #ffffff;
   --bsky-profile-border-radius: 0.75rem;
-  --bsky-profile-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0
-          0 0 / 0.1);
+  --bsky-profile-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
   --bsky-banner-width: 20rem;
   --bsky-banner-height: 6.5rem;
   --bsky-banner-background-color: #f0f3f5;

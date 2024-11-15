@@ -6,6 +6,12 @@ Bsky Profile Webcomponent. `<bsky-profile>` is a custom web component that displ
 
 Additionally, the component respects the user's device settings and avoids animations if the user has enabled "Reduce Motion" in their browser preferences.
 
+## 📚 Documentation
+
+Want to get started using some embed components?
+
+Check out the [`bsky-profile` documentation](https://parassolanki.github.io/bsky-profile/)
+
 ### Installation
 
 ```bash
@@ -41,6 +47,4 @@ npm i bsky-profile
 <bsky-profile data-handle="danabra.mov" data-theme="auto"></bsky-profile>
 ```
 
-Checkout the full [docs](https://github.com/ParasSolanki/bsky-profile/blob/main/packages/bsky-profile/README.md).
-
-> Note: Working on the docs with interactive ui and more examples.
+Checkout the full [docs](https://parassolanki.github.io/bsky-profile).
